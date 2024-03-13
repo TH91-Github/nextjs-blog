@@ -5,6 +5,10 @@ import { getCurrentWeather } from "./utils/getCurrentWeather";
 import { getTime } from "./utils/getTime";
 import RevalidateButton from "@/components/element/RevalidateButton";
 
+export const metadata = {
+  title: "weather",
+};
+
 export default async function Weather (){
   const directory = 'weather';
   const res = await getCurrentWeather('seoul')
